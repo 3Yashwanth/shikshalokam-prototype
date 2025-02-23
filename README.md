@@ -44,7 +44,7 @@ Contains:
 bash
 Copy
 Edit
-git clone https://github.com/YOUR_GITHUB_USERNAME/Teacher-Feedback-System.git
+git repo: https://github.com/3Yashwanth/shikshalokam-prototype.git
 cd Teacher-Feedback-System
 Open index.html in a browser.
 
@@ -64,9 +64,9 @@ My Feedback
  Login System for Teachers & Mentors 
  Dynamic Data Storage (Database Integration) 
  Real-time AI Feedback Processing 
-
+demo video link : https://drive.google.com/file/d/1k-faEFBmIpfPCcAx4hdo9jUvjnCgEm_O/view?usp=sharing
  License
 This project is open-source and free to use under the MIT License.
 
 
- GitHub Repo:
+ GitHub Repo: https://github.com/3Yashwanth/shikshalokam-prototype.git
