@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Training Portal</title>
+    <link rel="stylesheet" href="training.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-card">
+            <img src="images\tchr img.jpeg" alt="Teacher Profile" class="profile-pic">
+            <div class="profile-info">
+                <p><strong>Name:</strong> ABC</p>
+                <p><strong>Email:</strong> abc@gmail.com</p>
+                <p><strong>School:</strong> XYZ</p>
+                <p class="mentor">Shiksha Mentor</p>
+            </div>
+        </div>
+
+        <!-- Training Sessions -->
+        <div class="training-sessions">
+            <h2>TRAINING SESSIONS</h2>
+
+            <div class="video-list">
+                <div class="video-item" onclick="openVideo('images/video.mp4')">
+                    <video class="video-thumb" src="images\video.mp4"></video>
+                    <div class="video-info">
+                        <h3>Recording Session 1</h3>
+                        <p>Introduction to effective teaching techniques and classroom management.</p>
+                    </div>
+                </div>
+
+                <div class="video-item" onclick="openVideo('images/video.mp4')">
+                    <video class="video-thumb" src="images/video.mp4"></video>
+                    <div class="video-info">
+                        <h3>Recording Session 2</h3>
+                        <p>How to use digital tools for online learning and student engagement.</p>
+                    </div>
+                </div>
+
+                <div class="video-item" onclick="openVideo('images/video.mp4')">
+                    <video class="video-thumb" src="images/video.mp4"></video>
+                    <div class="video-info">
+                        <h3>Recording Session 3</h3>
+                        <p>Advanced teaching strategies to enhance student participation.</p>
+                    </div>
+                </div>
+
+                <!-- <button onclick="openVideo('images/video.mp4')">
+                    Play Video
+                </button> -->
+            
+                <!-- Video Modal -->
+                <div id="videoModal">
+                    <div class="video-container">
+                        <button class="close-btn" onclick="closeVideo()">X</button>
+                        <video id="modalVideo" width="400" height="220" controls>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Open Video Modal
+        function openVideo(videoSrc) {
+            document.getElementById("videoModal").style.display = "flex";
+            let video = document.getElementById("modalVideo");
+            video.src = videoSrc;
+            video.play(); // Auto-play the video
+        }
+
+        // Close Video Modal
+        function closeVideo() {
+            let video = document.getElementById("modalVideo");
+            document.getElementById("videoModal").style.display = "none";
+            video.pause(); // Pause video
+            video.currentTime = 0; // Reset video time
+        }
+    </script>
+</body>
+</html>
